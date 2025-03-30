@@ -1,0 +1,9 @@
+li{
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.flexDown{
+    display: flex;
+    flex-direction: column;
+}

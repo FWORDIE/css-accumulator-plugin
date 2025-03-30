@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Accum",
+  "version": "1.0",
+
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
+  "description": "Accumulates CSS as you go around the Web.",
+  "action": {
+    "default_icon": "icon.jpg",
+    "default_popup": "popup.html",
+    "default_title": "Accumulater"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["accumulater.js"]
+    }
+  ],
+  "icons": { 
+		"32": "icon.jpg"
+	},
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "fred@mildlyupset.com",
+    "strict_min_version": "58.0"
+  }
+}
+}
